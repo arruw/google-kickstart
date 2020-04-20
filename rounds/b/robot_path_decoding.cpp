@@ -15,7 +15,7 @@ state solve() {
   cin >> P;
 
   const int limit = 1000000000;
-  state s = {0, 0};
+  state s = {1, 1};
   int i = 0;
   stack<int> n;
   n.push(1);
@@ -49,8 +49,8 @@ state solve() {
 
   s.w %= limit;
   s.h %= limit;
-  if(s.w < 0) s.w = limit + s.w;
-  if(s.h < 0) s.h = limit + s.h;
+  if(s.w <= 0) s.w = limit + s.w;
+  if(s.h <= 0) s.h = limit + s.h;
 
   return s;
 }
@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
     {
         auto y = solve();
 
-        cout << "Case #" << x << ": " << y.w+1 << " " << y.h+1 << endl;
+        cout << "Case #" << x << ": " << y.w << " " << y.h << endl;
     }
     
     return 0;

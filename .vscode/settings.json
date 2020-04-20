@@ -2,7 +2,4 @@
   "files.exclude": {
     "**/*.out": true
   },
-  "files.associations": {
-    "tuple": "cpp"
-  }
 }
