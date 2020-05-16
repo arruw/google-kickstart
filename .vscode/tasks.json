@@ -1,23 +1,42 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-		{
-			"type": "shell",
-			"label": "C/C++: g++ build active file",
-			"command": "/usr/bin/g++",
-			"args": [
-				"-g",
-				"${file}",
-				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}.out"
-			],
-			"options": {
-				"cwd": "/usr/bin"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build"
-		}
-	]
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-std=c++14",
+                "-pthread",
+                "-O0",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "test",
+            "command": "${workspaceFolder}/test.sh",
+            "args": [
+                "${relativeFileDirname}",
+                "${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
 }
