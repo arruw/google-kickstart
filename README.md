@@ -18,5 +18,13 @@ https://codingcompetitions.withgoogle.com/kickstart/archive/2020
 [robot_path_decoding.cpp]: robot_path_decoding.cpp
 
 ### Round C
-...
+| Solution                  | Test set 1 | Test set 2 |
+|---------------------------|------------|------------|
+| [countdown.cpp]           | ✔️          | ✔️          |
+| [perfect_subarray.cpp]    | ✔️          | ❗TLE      |
 
+[countdown.cpp]: rounds/c/countdown.cpp
+[perfect_subarray.cpp]: rounds/c/perfect_subarray.cpp
+
+### Round D
+...

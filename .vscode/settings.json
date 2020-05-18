@@ -2,4 +2,13 @@
   "files.exclude": {
     "**/*.out": true
   },
+  "files.associations": {
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "unordered_set": "cpp",
+    "vector": "cpp",
+    "set": "cpp",
+    "unordered_map": "cpp",
+    "bitset": "cpp"
+  },
 }
