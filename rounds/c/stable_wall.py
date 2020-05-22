@@ -1,6 +1,5 @@
-import operator
-
 from typing import Tuple, List, Set
+
 
 def place(WALL, R: int, C: int, r: int, c: int, ground: Set[Tuple[int, int]]) -> Tuple[Set[Tuple[int, int]], bool]:
     tmp_ground = set(ground)
@@ -39,24 +38,28 @@ def solve():
     ground = set()
     for r in range(R-1, -1, -1):
         
-        has_solution = False
-        # while is_placed:
-
+        # find blocks in the row
         blocks = dict()
         for c in range(C):
             if (r, c) not in ground:
                 blocks[WALL[r][c]] = (r, c)
         blocks = list(blocks.items())
 
-        while blocks:
-            x, rc = blocks.pop(0)
-            if x in ground: continue
-            ground, is_placed = place(WALL, R, C, *rc, ground)
-            if not is_placed:
-                blocks.append((x, rc))
-            else:
-                # is_placed = True
-                result += x
+        # place all the block
+        for _ in blocks:
+            has_solution = False
+            # try placing one block at most once
+            for x, rc in blocks:
+                if rc in ground: continue
+                ground, is_placed = place(WALL, R, C, *rc, ground)
+                if is_placed:
+                    has_solution = True
+                    result += x
+                    break
+
+            # no solution
+            if not has_solution:
+                return '-1'
 
     return result
 
