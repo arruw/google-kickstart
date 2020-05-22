@@ -20,10 +20,11 @@ def place(WALL, R: int, C: int, r: int, c: int, ground: Set[Tuple[int, int]]) ->
         
         tmp_ground.add((rn, cn))
         
-        queue.append((rn-1, cn))
-        queue.append((rn+1, cn))
         queue.append((rn, cn-1))
         queue.append((rn, cn+1))
+        queue.append((rn-1, cn-1))
+        queue.append((rn-1, cn))
+        queue.append((rn-1, cn+1))
     
     return (tmp_ground, True)
 
@@ -66,7 +67,7 @@ def solve():
 def main():
     T = int(input())
     for t in range(T):
-        print(f'Case #{t+1}: {solve()}')
+        print('Case #{}: {}'.format(t+1, solve()))
 
 
 if __name__ == "__main__":
