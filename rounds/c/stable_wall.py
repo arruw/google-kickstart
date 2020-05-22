@@ -1,5 +1,5 @@
 from typing import Tuple, List, Set
-
+from itertools import permutations
 
 def place(WALL, R: int, C: int, r: int, c: int, ground: Set[Tuple[int, int]]) -> Tuple[Set[Tuple[int, int]], bool]:
     tmp_ground = set(ground)
@@ -64,10 +64,39 @@ def solve():
 
     return result
 
+
+def valid(WALL, R, C, permutation):
+    order = {o: i for i, o in enumerate(permutation)}
+    for r in range(R-2, -1, -1):
+        for c in range(C):
+            if order[WALL[r][c]] < order[WALL[r+1][c]]:
+                return False
+
+    return True
+
+def solve2():
+    R, C = map(int, input().split(' '))
+    CHARS = set()
+    WALL = []
+    for _ in range(R):
+        row = input()
+        CHARS |= set(row)
+        WALL.append(row)
+
+    if R == 1 or C == 1:
+        return ''.join(CHARS)
+
+    for p in permutations(CHARS, len(CHARS)):
+        if valid(WALL, R, C, p):
+            return ''.join(p)
+        
+    return '-1'
+
+
 def main():
     T = int(input())
     for t in range(T):
-        print('Case #{}: {}'.format(t+1, solve()))
+        print('Case #{}: {}'.format(t+1, solve2()))
 
 
 if __name__ == "__main__":
