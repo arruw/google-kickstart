@@ -31,7 +31,8 @@
             "command": "${workspaceFolder}/test.sh",
             "args": [
                 "${relativeFileDirname}",
-                "${fileBasenameNoExtension}"
+                "${fileBasenameNoExtension}",
+                "${fileExtname}"
             ],
             "group": {
                 "kind": "test",

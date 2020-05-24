@@ -1,21 +1,26 @@
 #!/bin/bash
 
-ROUND=$1
-PROBLEM=$2
+YEAR=$1
+ROUND=$2
+PROBLEM=$3
+EXT=${4:-cpp}
 
-mkdir -p rounds/$ROUND/files
+mkdir -p rounds/$YEAR/$ROUND/files
 
-CODE="rounds/$ROUND/$PROBLEM.cpp"
-STDIN="rounds/$ROUND/files/$PROBLEM.stdin"
-STDOUT="rounds/$ROUND/files/$PROBLEM.stdout"
+CODE="rounds/$YEAR/$ROUND/$PROBLEM.$EXT"
+STDIN="rounds/$YEAR/$ROUND/files/$PROBLEM.stdin"
+STDOUT="rounds/$YEAR/$ROUND/files/$PROBLEM.stdout"
 
-if  [ -f $CODE ]; then
-    echo "File $CODE already exists, exiting..."
-    exit 1
+if  [ ! -f $CODE ]; then
+    cp .template/code.$EXT $CODE && echo "Created $CODE"
 fi
 
-cp .template/code.cpp $CODE && echo "Created $CODE"
-cp .template/files/code.stdin  $STDIN   && echo "Created $STDIN"
-cp .template/files/code.stdout $STDOUT  && echo "Created $STDOUT"
+if  [ ! -f $CODE ]; then
+    cp .template/files/code.stdin  $STDIN   && echo "Created $STDIN"
+fi
+
+if  [ ! -f $CODE ]; then
+    cp .template/files/code.stdout $STDOUT  && echo "Created $STDOUT"
+fi
 
 code -r $CODE $STDIN $STDOUT
