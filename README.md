@@ -1,5 +1,5 @@
-# Google Kick Start - 2020
-https://codingcompetitions.withgoogle.com/kickstart/archive/2020
+# Google Kick Start
+https://codingcompetitions.withgoogle.com/kickstart
 
 ## Solutions
 
