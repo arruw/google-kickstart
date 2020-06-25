@@ -1,5 +1,3 @@
-// package allocation; // REMOVE THIS LINE ON SUBMISSION
-
 import java.util.*;
 import java.io.*;
 
@@ -33,8 +31,7 @@ public class Solution {
     public static void main(String[] args) {
         int t = _in.nextInt();
         for (int i = 1; i <= t; ++i) {
-            int y = solve();
-            System.out.println("Case #" + i + ": " + y);
+            System.out.println("Case #" + i + ": " + solve());
         }
     }
 }

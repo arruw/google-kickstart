@@ -13,7 +13,6 @@ STDOUT="rounds/$YEAR/$ROUND/$PROBLEM/.stdout"
 
 if  [ ! -f $CODE ]; then
     cp .template/code.$EXT $CODE && echo "Created $CODE"
-    sed -i "s/<problem_name>/$PROBLEM/g" $CODE
 fi
 
 if  [ ! -f $STDIN ]; then

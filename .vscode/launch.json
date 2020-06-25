@@ -9,7 +9,7 @@
       "type": "java",
       "request": "launch",
       "mainClass": "${file}",
-      "console": "integratedTerminal",
+      "console": "externalTerminal",
       "cwd": "${fileDirname}",
       "args": [
         "<${fileDirname}/.stdin"
