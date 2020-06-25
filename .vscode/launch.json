@@ -5,22 +5,33 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name":"Python: Current File",
-      "type":"python",
-      "request":"launch",
-      "program":"${file}",
-      "console":"integratedTerminal",
+      "name": "Java",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "${file}",
+      "console": "integratedTerminal",
+      "cwd": "${fileDirname}",
       "args": [
-        "<${fileDirname}/files/${fileBasenameNoExtension}.stdin",
+        "<${fileDirname}/.stdin"
       ]
     },
     {
-      "name": "g++ - Build and debug active file",
+      "name": "Python",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "args": [
+        "<${fileDirname}/.stdin"
+      ]
+    },
+    {
+      "name": "C++",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+      "program": "${fileDirname}/Solution.out",
       "args": [
-        "<${fileDirname}/files/${fileBasenameNoExtension}.stdin",
+        "<${fileDirname}/.stdin"
       ],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
@@ -34,7 +45,7 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "build",
+      "preLaunchTask": "Build C++",
       "miDebuggerPath": "/usr/bin/gdb"
     }
   ]

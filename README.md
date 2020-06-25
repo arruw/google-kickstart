@@ -6,31 +6,31 @@ https://codingcompetitions.withgoogle.com/kickstart/archive/2020
 ### 2020
 
 #### Round A
-| Solution                  | Test set 1 | Test set 2 |
-|---------------------------|------------|------------|
-| [allocation.cpp]          | ✔️          | ✔️          |
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [allocation]          | ✔️          | ✔️          |
 
-[allocation.cpp]: rounds/2020/a/allocation.cpp
+[allocation]: rounds/2020/a/allocation
 
 #### Round B
-| Solution                  | Test set 1 | Test set 2 |
-|---------------------------|------------|------------|
-| [bike_tour.cpp]           | ✔️          | ✔️          |
-| [bus_routes.cpp]          | ✔️          | ❗RE       |
-| [robot_path_decoding.cpp] | ✔️          | ❗WA       |
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [bike_tour]           | ✔️          | ✔️          |
+| [bus_routes]          | ✔️          | ❗RE       |
+| [robot_path_decoding] | ✔️          | ❗WA       |
 
-[bike_tour.cpp]: rounds/2020/b/bike_tour.cpp
-[bus_routes.cpp]: rounds/2020/b/bus_routes.cpp
-[robot_path_decoding.cpp]: rounds/2020/b/robot_path_decoding.cpp
+[bike_tour]: rounds/2020/b/bike_tour
+[bus_routes]: rounds/2020/b/bus_routes
+[robot_path_decoding]: rounds/2020/b/robot_path_decoding
 
 #### Round C
-| Solution                  | Test set 1 | Test set 2 |
-|---------------------------|------------|------------|
-| [countdown.cpp]           | ✔️          | ✔️          |
-| [perfect_subarray.cpp]    | ✔️          | ❗TLE      |
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [countdown]           | ✔️          | ✔️          |
+| [perfect_subarray]    | ✔️          | ❗TLE      |
 
-[countdown.cpp]: rounds/2020/c/countdown.cpp
-[perfect_subarray.cpp]: rounds/2020/c/perfect_subarray.cpp
+[countdown]: rounds/2020/c/countdown
+[perfect_subarray]: rounds/2020/c/perfect_subarray
 
 #### Round D
 ...

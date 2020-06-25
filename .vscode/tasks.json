@@ -3,7 +3,7 @@
 	"tasks": [
         {
             "type": "shell",
-            "label": "build",
+            "label": "Build C++",
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
@@ -20,10 +20,7 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         },
         {
             "type": "shell",
@@ -31,7 +28,6 @@
             "command": "${workspaceFolder}/test.sh",
             "args": [
                 "${relativeFileDirname}",
-                "${fileBasenameNoExtension}",
                 "${fileExtname}"
             ],
             "group": {

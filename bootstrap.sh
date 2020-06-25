@@ -5,22 +5,23 @@ ROUND=$2
 PROBLEM=$3
 EXT=${4:-cpp}
 
-mkdir -p rounds/$YEAR/$ROUND/files
+mkdir -p rounds/$YEAR/$ROUND/$PROBLEM/
 
-CODE="rounds/$YEAR/$ROUND/$PROBLEM.$EXT"
-STDIN="rounds/$YEAR/$ROUND/files/$PROBLEM.stdin"
-STDOUT="rounds/$YEAR/$ROUND/files/$PROBLEM.stdout"
+CODE="rounds/$YEAR/$ROUND/$PROBLEM/Solution.$EXT"
+STDIN="rounds/$YEAR/$ROUND/$PROBLEM/.stdin"
+STDOUT="rounds/$YEAR/$ROUND/$PROBLEM/.stdout"
 
 if  [ ! -f $CODE ]; then
     cp .template/code.$EXT $CODE && echo "Created $CODE"
+    sed -i "s/<problem_name>/$PROBLEM/g" $CODE
 fi
 
-if  [ ! -f $CODE ]; then
-    cp .template/files/code.stdin  $STDIN   && echo "Created $STDIN"
+if  [ ! -f $STDIN ]; then
+    touch  $STDIN   && echo "Created $STDIN"
 fi
 
-if  [ ! -f $CODE ]; then
-    cp .template/files/code.stdout $STDOUT  && echo "Created $STDOUT"
+if  [ ! -f $STDOUT ]; then
+    touch $STDOUT  && echo "Created $STDOUT"
 fi
 
 code -r $CODE $STDIN $STDOUT
