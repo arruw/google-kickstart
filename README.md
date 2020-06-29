@@ -3,6 +3,15 @@ https://codingcompetitions.withgoogle.com/kickstart
 
 ## Solutions
 
+### 2018
+
+#### Round A
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [even_digits]         | ✔️          | ✔️          |
+
+[even_digits]: rounds/2018/a/even_digits
+
 ### 2020
 
 #### Round A
