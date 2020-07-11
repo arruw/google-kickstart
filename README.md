@@ -17,7 +17,7 @@ https://codingcompetitions.withgoogle.com/kickstart
 #### Round A
 | Solution              | Test set 1 | Test set 2 |
 |-----------------------|------------|------------|
-| [training]            | ✔️          | ❗TLE      |
+| [training]            | ✔️          | ✔️          |
 
 [training]: rounds/2019/a/training
 

@@ -8,19 +8,25 @@ public class Solution {
     private static int solve() {
         final int N = _in.nextInt();
         final int P = _in.nextInt();
-        int S[] = new int[N];
+        Integer S[] = new Integer[N];
         for (int i = 0; i < S.length; i++) {
             S[i] = _in.nextInt();
         }
-        Arrays.sort(S);
+        
+        Arrays.sort(S,Collections.reverseOrder());
 
-        int result = Integer.MAX_VALUE, temp;
-        for (int i = S.length - 1; i >= P-1; i--) {
-            temp = 0;
-            for (int j = 1; j < P; j++) {
-                temp += S[i] - S[i-j];
+        int result = Integer.MAX_VALUE;
+        int prefix = 0;
+        for (int i = 0; i < S.length; i++) {
+            if (i < P) {
+                prefix += S[i];
+            } else {
+                prefix += S[i] - S[i-P];
             }
-            result = Math.min(result, temp);
+
+            if (i < P-1) continue;
+
+            result = Math.min(result, P * S[i-P+1] - prefix);
         }
 
         return result;
