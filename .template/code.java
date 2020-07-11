@@ -10,8 +10,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int t = _in.nextInt();
-        for (int i = 1; i <= t; ++i) {
+        int T = _in.nextInt();
+        for (int i = 1; i <= T; ++i) {
             System.out.println("Case #" + i + ": " + solve());
         }
     }

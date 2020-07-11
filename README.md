@@ -12,6 +12,15 @@ https://codingcompetitions.withgoogle.com/kickstart
 
 [even_digits]: rounds/2018/a/even_digits
 
+### 2019
+
+#### Round A
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [training]            | ✔️          | ❗TLE      |
+
+[training]: rounds/2019/a/training
+
 ### 2020
 
 #### Round A
