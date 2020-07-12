@@ -7,8 +7,6 @@ public class Solution {
 
     private static int solve() {
         final int N = _in.nextInt();
-        _in.nextLine();
-        // final int[] V = Arrays.stream(_in.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] V = new int[N+2];
         V[0] = -1;
         for (int i = 0; i < N; i++) {
