@@ -51,4 +51,13 @@ https://codingcompetitions.withgoogle.com/kickstart
 [perfect_subarray]: rounds/2020/c/perfect_subarray
 
 #### Round D
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [record_breaker]      | ✔️          | ✔️          |
+| [alien_piano]         | ✔️          | ❗TLE      |
+
+[record_breaker]: rounds/2020/d/record_breaker
+[alien_piano]: rounds/2020/d/alien_piano
+
+#### Round D
 ...
