@@ -34,6 +34,46 @@
                 "kind": "test",
                 "isDefault": true
             }
+        },
+        {
+            "type": "shell",
+            "label": "bootstrap",
+            "command": "${workspaceFolder}/bootstrap.sh",
+            "args": [
+                "${input:year}",
+                "${input:round}",
+                "${input:problem}",
+                "${input:ext}"
+            ],
+            "group": "none",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "year",
+            "type": "promptString",
+            "description": "Competition year (example: 2020)"
+        },
+        {
+            "id": "round",
+            "type": "promptString",
+            "description": "Competition round (example: d)"
+        },
+        {
+            "id": "problem",
+            "type": "promptString",
+            "description": "Prolem name (example: alien_piano)"
+        },
+        {
+            "id": "ext",
+            "type": "pickString",
+            "description": "Solution programming language (example: cpp)",
+            "options": [
+                "cpp",
+                "py",
+                "java"
+            ]
         }
     ]
 }

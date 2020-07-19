@@ -54,10 +54,7 @@ https://codingcompetitions.withgoogle.com/kickstart
 | Solution              | Test set 1 | Test set 2 |
 |-----------------------|------------|------------|
 | [record_breaker]      | ✔️          | ✔️          |
-| [alien_piano]         | ✔️          | ❗TLE      |
+| [alien_piano]         | ✔️          | ✔️          |
 
 [record_breaker]: rounds/2020/d/record_breaker
 [alien_piano]: rounds/2020/d/alien_piano
-
-#### Round D
-...
