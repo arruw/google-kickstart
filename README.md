@@ -1,6 +1,8 @@
 # Google Kick Start
 https://codingcompetitions.withgoogle.com/kickstart
 
+<iframe width="270px" height="90px" src="https://google-kickstart-me.herokuapp.com/flier/matjazmav?ppl=JAVA#"></iframe>
+
 ## Solutions
 
 ### 2018
