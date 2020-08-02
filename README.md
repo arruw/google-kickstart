@@ -1,7 +1,7 @@
 # Google Kick Start
 https://codingcompetitions.withgoogle.com/kickstart
 
-<iframe width="270px" height="90px" src="https://google-kickstart-me.herokuapp.com/flier/matjazmav?ppl=JAVA#"></iframe>
+<img src="https://image.thum.io/get/crop/60/viewportWidth/265/noanimate/width/265/https://google-kickstart-me.herokuapp.com/flier/matjazmav?ppl=JAVA" />
 
 ## Solutions
 
