@@ -1,7 +1,7 @@
 # Google Kick Start
 https://codingcompetitions.withgoogle.com/kickstart
 
-<img src="https://image.thum.io/get/crop/60/viewportWidth/265/noanimate/width/265/https://google-kickstart-me.herokuapp.com/flier/matjazmav?ppl=JAVA" />
+<a href="https://google-kickstart-me.herokuapp.com/flier/matjazmav/java"><img alt="Google Kick Start Badge" decoding=async crossorigin=anonymous src="https://google-kickstart-me.herokuapp.com/flier/matjazmav/java/thumbnail" /></a>
 
 ## Solutions
 
