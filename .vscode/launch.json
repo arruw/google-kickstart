@@ -9,44 +9,10 @@
       "type": "java",
       "request": "launch",
       "mainClass": "${file}",
-      "console": "externalTerminal",
       "cwd": "${fileDirname}",
       "args": [
         "<${fileDirname}/.stdin"
       ]
-    },
-    {
-      "name": "Python",
-      "type": "python",
-      "request": "launch",
-      "program": "${file}",
-      "console": "integratedTerminal",
-      "args": [
-        "<${fileDirname}/.stdin"
-      ]
-    },
-    {
-      "name": "C++",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}/Solution.out",
-      "args": [
-        "<${fileDirname}/.stdin"
-      ],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
-      "preLaunchTask": "Build C++",
-      "miDebuggerPath": "/usr/bin/gdb"
     }
   ]
 }

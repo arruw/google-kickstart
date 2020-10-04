@@ -1,79 +1,46 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-        {
-            "type": "shell",
-            "label": "Build C++",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-g",
-                "${file}",
-                "-std=c++14",
-                "-pthread",
-                "-O0",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.out"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build"
-        },
-        {
-            "type": "shell",
-            "label": "test",
-            "command": "${workspaceFolder}/test.sh",
-            "args": [
-                "${relativeFileDirname}",
-                "${fileExtname}"
-            ],
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "bootstrap",
-            "command": "${workspaceFolder}/bootstrap.sh",
-            "args": [
-                "${input:year}",
-                "${input:round}",
-                "${input:problem}",
-                "${input:ext}"
-            ],
-            "group": "none",
-            "problemMatcher": []
-        }
-    ],
-    "inputs": [
-        {
-            "id": "year",
-            "type": "promptString",
-            "description": "Competition year (example: 2020)"
-        },
-        {
-            "id": "round",
-            "type": "promptString",
-            "description": "Competition round (example: d)"
-        },
-        {
-            "id": "problem",
-            "type": "promptString",
-            "description": "Prolem name (example: alien_piano)"
-        },
-        {
-            "id": "ext",
-            "type": "pickString",
-            "description": "Solution programming language (example: cpp)",
-            "options": [
-                "cpp",
-                "py",
-                "java"
-            ]
-        }
-    ]
+    {
+      "type": "shell",
+      "label": "test",
+      "command": "gks-test",
+      "args": [
+        "${file}"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "bootstrap",
+      "command": "gks-bootstrap",
+      "args": [
+        "${input:year}",
+        "${input:round}",
+        "${input:problem}"
+      ],
+      "group": "none",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "year",
+      "type": "promptString",
+      "description": "Competition year (example: 2020)"
+    },
+    {
+      "id": "round",
+      "type": "promptString",
+      "description": "Competition round (example: d)"
+    },
+    {
+      "id": "problem",
+      "type": "promptString",
+      "description": "Prolem name (example: alien_piano)"
+    }
+  ]
 }
