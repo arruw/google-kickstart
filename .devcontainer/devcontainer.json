@@ -1,0 +1,45 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.134.1/containers/java
+{
+	"image": "matjazmav/google-kick-start-java:latest",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
+		"java.configuration.runtimes": [
+			{
+				"name": "JavaSE-1.8",
+				"path": "/usr/lib/jvm/java-8-openjdk-amd64",
+				"default": true
+			},
+			{
+				"name": "JavaSE-11",
+				"path": "/usr/lib/jvm/java-11-openjdk-amd64"
+			}
+		],
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/*.class": true
+		}
+	},
+	
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"vscjava.vscode-java-debug",
+		"redhat.java"
+	]
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "java -version",
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}
