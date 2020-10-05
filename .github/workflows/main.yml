@@ -24,4 +24,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run all tests
-        run: find . -name '*.java' | xargs -n 1 -i'{}' gks-test {}
+        run: find . -name '*.java' | xargs -n 1 -i'{}' .devcontainer/tools/gks-test {}
