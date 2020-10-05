@@ -19,14 +19,6 @@
 				"path": "/usr/lib/jvm/java-11-openjdk-amd64"
 			}
 		],
-		"files.exclude": {
-			"**/.git": true,
-			"**/.svn": true,
-			"**/.hg": true,
-			"**/CVS": true,
-			"**/.DS_Store": true,
-			"**/*.class": true
-		}
 	},
 	
 	// Add the IDs of extensions you want installed when the container is created.

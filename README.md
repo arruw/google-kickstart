@@ -1,20 +1,18 @@
 # Google Kick Start
-https://codingcompetitions.withgoogle.com/kickstart
 
-This repository contain Visual Studio Code development environemnt for Java.
-All dependencies are packed in a Docker image.
+This repository contain some solutions of the [Google Kick Start](https://codingcompetitions.withgoogle.com/kickstart) challanges and Visual Studio Code development environemnt for Java with all dependencies packed in a Docker image.
 
-1. Clone and open this repository in remote container: `> Remote-Containers: Reopen in Container`
-2. Bootstrap workspace for a new challange: `> Tasks: Run Task > bootstrap > [year] > [round] > [challange_name]`
-3. Copy/paste example input and output from the challange web page to the `.stdin` and `.stdout` files
-4. Solve the coding challange in the `Solution.java` file
-5. To use Java debugger focus `Solution.java` file and click `F5`
-6. To test your solution focus `Solution.java` file and then `> Tasks: Run Test Task`
-7. To submit your solution just copy `Solution.java` file to the submition box on the web page.
+See more here:
+* [Solved Challanges](#solved-challanges)
+* [How to use this repository](#how-to-use-this-repository)
+
+[
+  ![Google Kick Start Badge](https://google-kickstart-me.herokuapp.com/flier/matjazmav/java/thumbnail)
+](https://github.com/matjazmav/google-kickstart-me)
+
+Get your Kick Start badge here: [matjazmav/google-kickstart-me](https://github.com/matjazmav/google-kickstart-me)
 
 ## Solved Challanges
-
-![Google Kick Start Badge](https://google-kickstart-me.herokuapp.com/flier/matjazmav/java/thumbnail)
 
 ### 2018
 
@@ -56,5 +54,24 @@ All dependencies are packed in a Docker image.
 | Solution              | Test set 1 | Test set 2 |
 |-----------------------|------------|------------|
 | [atm_queue]           | ✔️         | ✔️        |
+| [metal_harvest]       | ✔️         | ✔️        |
 
 [atm_queue]: rounds/2020/f/atm_queue
+[metal_harvest]: rounds/2020/f/metal_harvest
+
+
+## How to use this repository
+
+### Requirements
+* Git
+* Docker
+* Visual Studio Code with Remote-Containers extension
+
+### Steps
+1. Clone and open this repository in remote container: `> Remote-Containers: Reopen in Container`
+2. Bootstrap workspace for a new challange: `> Tasks: Run Task > bootstrap > [year] > [round] > [challange_name]`
+3. Copy/paste example input and output from the challange web page to the `.stdin` and `.stdout` files
+4. Solve the coding challange in the `Solution.java` file
+5. To use Java debugger focus `Solution.java` file and click `F5`
+6. To test your solution focus `Solution.java` file and then `> Tasks: Run Test Task`
+7. To submit your solution just copy `Solution.java` file to the submition box on the web page.
