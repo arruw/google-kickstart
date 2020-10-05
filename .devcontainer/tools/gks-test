@@ -4,6 +4,6 @@
 
 ROOT=$(dirname $1)
 
-echo "[Java] $ROOT/Solution.java" 
-javac $ROOT/Solution.java
-diff --color=always -ys -EZb $ROOT/.stdout <(java -Xms896m -Xmx896m -Xss64m -XX:+UseSerialGC -cp $ROOT Solution < $ROOT/.stdin)
+javac $ROOT/Solution.java || (echo -e "[TEST FAILED] $ROOT/Solution.java\n" && exit 1)
+(diff --color=always -y -EZb $ROOT/.stdout <(java -Xms896m -Xmx896m -Xss64m -XX:+UseSerialGC -cp $ROOT Solution < $ROOT/.stdin) && echo -e "[OK] $ROOT/Solution.java\n") \
+  || (echo -e "[TEST FAILED] $ROOT/Solution.java\n" && exit 1)

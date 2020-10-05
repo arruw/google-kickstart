@@ -3,6 +3,9 @@
 {
 	"image": "matjazmav/google-kick-start-java:latest",
 	"initializeCommand": "docker pull matjazmav/google-kick-start-java:latest",
+	// "build": {
+	// 	"dockerfile": "Dockerfile"
+	// },
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
