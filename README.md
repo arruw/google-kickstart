@@ -1,5 +1,7 @@
 # Google Kick Start
 
+![CI](https://github.com/matjazmav/google-kickstart/workflows/CI/badge.svg)
+
 This repository contain some solutions of the [Google Kick Start](https://codingcompetitions.withgoogle.com/kickstart) challanges and Visual Studio Code development environemnt for Java with all dependencies packed in a Docker image.
 
 See more here:
