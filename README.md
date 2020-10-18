@@ -62,6 +62,17 @@ Get your Kick Start badge here: [matjazmav/google-kickstart-me](https://github.c
 [metal_harvest]: rounds/2020/f/metal_harvest
 
 
+#### Round G
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [kick_start]          | ✔️         | ✔️        |
+| [maximum_coins]       | ✔️         | ✔️        |
+| [combination_lock]    | ✔️         | ❗TLE       |
+
+[kick_start]: rounds/2020/g/kick_start
+[maximum_coins]: rounds/2020/g/maximum_coins
+[combination_lock]: rounds/2020/g/combination_lock
+
 ## How to use this repository
 
 ### Requirements
