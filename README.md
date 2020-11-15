@@ -73,6 +73,16 @@ Get your Kick Start badge here: [matjazmav/google-kickstart-me](https://github.c
 [maximum_coins]: rounds/2020/g/maximum_coins
 [combination_lock]: rounds/2020/g/combination_lock
 
+
+#### Round H
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [retype]              | ✔️         | ✔️        |
+| [boring_numbers]      | ✔️         | ❗TLE       |
+
+[retype]: rounds/2020/h/retype
+[boring_numbers]: rounds/2020/h/boring_numbers
+
 ## How to use this repository
 
 ### Requirements
