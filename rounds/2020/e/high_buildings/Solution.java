@@ -54,7 +54,7 @@ public class Solution {
             .collect(Collectors.joining(" "));
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int T = _in.nextInt();
         for (int i = 1; i <= T; ++i) {
             System.out.println("Case #" + i + ": " + solve());
