@@ -52,6 +52,13 @@ Get your Kick Start badge here: [matjazmav/google-kickstart-me](https://github.c
 [record_breaker]: rounds/2020/d/record_breaker
 [alien_piano]: rounds/2020/d/alien_piano
 
+#### Round E
+| Solution              | Test set 1 | Test set 2 |
+|-----------------------|------------|------------|
+| [high_buildings]      | ✔️         | ✔️        |
+
+[high_buildings]: rounds/2020/e/high_buildings
+
 #### Round F
 | Solution              | Test set 1 | Test set 2 |
 |-----------------------|------------|------------|
